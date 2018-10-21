@@ -1,7 +1,11 @@
-var SweetClass = (function () {
-    function SweetClass() {
-        console.log('Hello World');
+var SweetSweetBasil = (function () {
+    function SweetSweetBasil(name) {
+        console.log('Hello ' + name);
     }
-    return SweetClass;
+    SweetSweetBasil.prototype.color = function () {
+        console.log('Green');
+    };
+    return SweetSweetBasil;
 }());
-var basil = new SweetClass();
+var basil = new SweetSweetBasil('Douglas');
+basil.color();
